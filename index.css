@@ -1,5 +1,11 @@
 html {
   scroll-behavior: smooth;
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}
+
+html::-webkit-scrollbar {
+  display: none;
 }
 
 body {
@@ -52,7 +58,8 @@ a:active {
   position: fixed;
   width: 10%;
   height: 100%;
-  writing-mode: sideways-lr;
+  writing-mode: vertical-rl;
+  transform: rotate(180deg);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -307,4 +314,13 @@ span {
 
 h2 {
   text-align: center;
+}
+
+.page-title {
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  font-size: 75px;
+  color: white;
+  margin-right: 10%;
+  display: block;
+  width: 100%;
 }
