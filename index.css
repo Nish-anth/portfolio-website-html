@@ -1,0 +1,310 @@
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  height: 100%;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  background-color: black;
+  cursor: none;
+  scroll-snap-type: mandatory;
+}
+
+.scrollable {
+  scroll-snap-align: center;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+a:visited {
+  color: white;
+}
+
+a:hover {
+  cursor: none;
+}
+
+a:active {
+  background-color: red;
+}
+
+.custom-cursor {
+  position: absolute;
+  width: 2.5%;
+  height: 5%;
+  border-radius: 50%;
+  border: 2px dotted black;
+  background-color: yellow;
+  mix-blend-mode: difference;
+  z-index: 10000;
+  pointer-events: none;
+}
+
+.sticky-nav {
+  display: inline;
+  position: fixed;
+  width: 10%;
+  height: 100%;
+  writing-mode: sideways-lr;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  z-index: 1000;
+}
+
+ul {
+  height: inherit;
+  display: flex;
+  margin: 0;
+  justify-content: space-evenly;
+}
+
+li {
+  margin: 0;
+  text-decoration: none;
+  display: inline-block;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.home {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.hero {
+  width: 100%;
+  height: 75%;
+  display: flex;
+  position: relative;
+  flex-direction: row;
+  align-items: center;
+}
+
+span {
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  font-size: 75px;
+  color: white;
+  margin-right: 10%;
+}
+
+.stroke {
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  -webkit-text-fill-color: transparent;
+  -webkit-text-stroke-width: 1.5px;
+  -webkit-text-stroke-color: white;
+}
+
+.globe {
+  height: 40vh;
+  width: 20vw;
+  margin-left: 60%;
+  position: absolute;
+  border-radius: 100%;
+  background-color: red;
+  animation: globetrotter 10s linear infinite 1s;
+}
+
+.globe-holder {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  flex-direction: row;
+  position: relative;
+  border-radius: 100%;
+  overflow: hidden;
+}
+
+.sphere {
+  width: 33%;
+  height: 33%;
+}
+
+.sphere-1 {
+  animation: sphere-1 10s linear infinite 1s;
+}
+
+.sphere-2 {
+  animation: sphere-2 10s linear infinite 1s;
+}
+
+.sphere-3 {
+  animation: sphere-3 10s linear infinite 1s;
+}
+
+.sphere-4 {
+  animation: sphere-4 10s linear infinite 1s;
+}
+
+.sphere-5 {
+  animation: sphere-5 10s linear infinite 1s;
+}
+
+.sphere-6 {
+  animation: sphere-6 10s linear infinite 1s;
+}
+
+.sphere-7 {
+  animation: sphere-7 10s linear infinite 1s;
+}
+
+.sphere-8 {
+  animation: sphere-8 10s linear infinite 1s;
+}
+
+.sphere-9 {
+  animation: sphere-9 10s linear infinite 1s;
+}
+
+@keyframes globetrotter {
+  0% {
+    background-color: red;
+  }
+}
+
+@keyframes sphere-1 {
+  0% {
+    background-color: red;
+  }
+  10% {
+    background-color: yellow;
+  }
+  15% {
+    background-color: #b8f1b0;
+  }
+  25% {
+    background-color: #0096ff;
+  }
+  40% {
+    background-color: #f637ec;
+  }
+}
+
+@keyframes sphere-2 {
+  0% {
+    background-color: red;
+  }
+  5% {
+    background-color: yellow;
+  }
+  15% {
+    background-color: #0096ff;
+  }
+  30% {
+    background-color: #0096ff;
+  }
+  55% {
+    background-color: #f637ec;
+  }
+}
+
+@keyframes sphere-3 {
+  0% {
+    background-color: red;
+  }
+  25% {
+    background-color: #0096ff;
+  }
+}
+
+@keyframes sphere-4 {
+  0% {
+    background-color: red;
+  }
+  15% {
+    background-color: yellow;
+  }
+  20% {
+    background-color: #0096ff;
+  }
+  45% {
+    background-color: #f637ec;
+  }
+}
+
+@keyframes sphere-5 {
+  0% {
+    background-color: red;
+  }
+  15% {
+    background-color: yellow;
+  }
+  25% {
+    background-color: #0096ff;
+  }
+}
+
+@keyframes sphere-6 {
+  0% {
+    background-color: red;
+  }
+  25% {
+    background-color: #0096ff;
+  }
+}
+
+@keyframes sphere-7 {
+  0% {
+    background-color: red;
+  }
+  15% {
+    background-color: yellow;
+  }
+  20% {
+    background-color: #3330e4;
+  }
+  35% {
+    background-color: #f637ec;
+  }
+}
+
+@keyframes sphere-8 {
+  0% {
+    background-color: red;
+  }
+  15% {
+    background-color: yellow;
+  }
+  20% {
+    background-color: #3330e4;
+  }
+}
+
+@keyframes sphere-9 {
+  0% {
+    background-color: red;
+  }
+  15% {
+    background-color: yellow;
+  }
+  25% {
+    background-color: #0096ff;
+  }
+}
+
+.screen {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backdrop-filter: blur(30px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+h2 {
+  text-align: center;
+}

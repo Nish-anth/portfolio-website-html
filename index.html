@@ -1,0 +1,277 @@
+<html>
+  <head>
+    <link rel="stylesheet" href="index.css" />
+    <link rel="stylesheet" href="about_me.css" />
+    <link rel="stylesheet" href="skills.css" />
+    <link rel="stylesheet" href="projects.css" />
+    <link rel="stylesheet" href="contact.css" />
+    <script>
+      handleMouseMove = (event) => {
+        const y = event.pageY - 10;
+        const x = event.pageX - 15;
+        const ref = document.getElementById("custom-cursor");
+        const scrollLeft =
+          window.pageXOffset !== undefined
+            ? window.pageXOffset
+            : (
+                document.documentElement ||
+                document.body.parentNode ||
+                document.body
+              ).scrollLeft;
+        ref.style.left = x - scrollLeft + "px";
+        ref.style.top = y + "px";
+      };
+      document.addEventListener("mousemove", handleMouseMove, false);
+    </script>
+  </head>
+  <body>
+    <div class="sticky-nav">
+      <ul>
+        <li><a href="#contact">contact me</a></li>
+        <li><a href="#projects">projects</a></li>
+        <li><a href="#skills">skills</a></li>
+        <li><a href="#about-me">about me</a></li>
+        <li><a href="#home">home</a></li>
+      </ul>
+    </div>
+    <div class="home scrollable" id="home">
+      <div class="hero">
+        <div class="globe">
+          <div class="globe-holder">
+            <div class="sphere sphere-1"></div>
+            <div class="sphere sphere-2"></div>
+            <div class="sphere sphere-3"></div>
+            <div class="sphere sphere-4"></div>
+            <div class="sphere sphere-5"></div>
+            <div class="sphere sphere-6"></div>
+            <div class="sphere sphere-7"></div>
+            <div class="sphere sphere-8"></div>
+            <div class="sphere sphere-9"></div>
+          </div>
+        </div>
+        <div class="screen">
+          <span class="stroke">HEY, I'M NISHANTH</span>
+          <span><> HEY, I'M NISHANTH <></span>
+          <span class="stroke">HEY, I'M NISHANTH</span>
+        </div>
+      </div>
+    </div>
+    <div class="about-me scrollable" id="about-me">
+      <div class="orb-container">
+        <div class="glow-orb"></div>
+      </div>
+      <div class="grid-container">
+        <div class="grid-item">
+          <p>Software Engineer at</p>
+          <h2>Hatio</h2>
+        </div>
+        <div class="grid-item">
+          <h2>2.5</h2>
+          <p>years of experience</p>
+        </div>
+        <div class="grid-item grid-span-2 about-intro">
+
+            <p>
+                "I weave elegance in design, precision in code; crafting a digital tapestry."
+            </p>
+
+            <p class="about-intro-section">
+                Passionate software engineer specializing in crafting highly efficient systems, 
+                driven to delve deep into system intricacies and push boundaries. 
+                Combining technical expertise with a keen eye for form factor, I strive to create uniquely designed solutions.
+            </p>
+
+            <!-- <p class="about-intro-section">
+                Currently at Hatio, dedicated to developing next-gen fintech products, 
+                with a focus on crafting seamless and secure payouts, alongside pioneering efforts in shaping a robust and user-friendly crypto exchange.
+            </p> -->
+
+            <p class="about-intro-section">
+                Outside of work, you'd probably catch me immersed in Valorant battles, poring over books, 
+                and geeking out over the delightful realms of food, music, movies, and sports. 
+            </p>
+
+            <p class="about-intro-section">tldr: I'm a nerd :)</p>
+        </div>
+        <div class="grid-item">
+          <h2>4</h2>
+          <p>times best employee in a row</p>
+        </div>
+        <div class="grid-item grid-span-row-2">
+            <h2>About Me</h2>
+            <p>want to know more?</p>
+<button class="button-30" role="button">download resume</button>
+            
+        </div>
+        <div class="grid-item">
+          <p>highest education qualification</p>
+          <h2>B.Tech CSE</h2>
+        </div>
+        <div class="grid-item">
+          <p>based out of</p>
+          <h2>Kochi, India</h2>
+        </div>
+        <div class="grid-item">
+          <h2>04:03 PM</h2>
+          <p>local time - Asia/Kolkata</p>
+        </div>
+      </div>
+    </div>
+    
+    <div class="skills" id="skills">
+      <div class="skills-container">
+        <div class="project-header"><span>My arsenal</span></div>
+        <p>- jack of all trades; mastering some -</p>
+        <div class="skill-box sb-1">
+          <div class="skill-holder">
+            <div class="skill-logo">
+              <img src="images/languages/icons8-kotlin.svg" class="logo-holder" alt="" />
+              <p class="logo-title">Kotlin</p>
+            </div>
+            <div class="skill-logo">
+              <img src="images/languages/icons8-java.svg" class="logo-holder" alt="" />
+              <p class="logo-title">Java</p>
+            </div>
+            <div class="skill-logo">
+              <img src="images/languages/icons8-c-programming.svg" class="logo-holder" alt="" />
+              <p class="logo-title">C</p>
+            </div>
+            <div class="skill-logo">
+              <img src="images/languages/icons8-c.svg" class="logo-holder" alt="" />
+              <p class="logo-title">C++</p>
+            </div>
+            <div class="skill-logo">
+              <img src="images/languages/icons8-html5.svg" class="logo-holder" alt="" />
+              <p class="logo-title">HTML</p>
+            </div>
+            <div class="skill-logo">
+              <img src="images/languages/icons8-css3.svg" class="logo-holder" alt="" />
+              <p class="logo-title">CSS</p>
+            </div>
+            <div class="skill-logo">
+              <img src="images/languages/icons8-javascript.svg" class="logo-holder" alt="" />
+              <p class="logo-title">Javascript</p>
+            </div>
+            <div class="skill-logo">
+              <img src="images/languages/icons8-typescript.svg" class="logo-holder" alt="" />
+              <p class="logo-title">Typescript</p>
+            </div>
+            <div class="skill-logo">
+              <img src="images/languages/icons8-dart.svg" class="logo-holder" alt="" />
+              <p class="logo-title">Dart</p>
+            </div>
+            <div class="skill-logo">
+                <img src="images/frameworks/icons8-spring-boot.svg" class="logo-holder" alt="" />
+                <p class="logo-title">SpringBoot</p>
+            </div>
+            <div class="skill-logo">
+                <img src="images/frameworks/icons8-react.svg" class="logo-holder" alt="" />
+                <p class="logo-title">React</p>
+              </div>
+              <div class="skill-logo">
+                <img src="images/frameworks/icons8-react-native.svg" class="logo-holder" alt="" />
+                <p class="logo-title">React Native</p>
+              </div>
+              <div class="skill-logo">
+                <img src="images/frameworks/icons8-flutter.svg" class="logo-holder" alt="" />
+                <p class="logo-title">Flutter</p>
+              </div>
+              <div class="skill-logo">
+                <img src="images/frameworks/icons8-tailwind-css.svg" class="logo-holder" alt="" />
+                <p class="logo-title">Tailwind CSS</p>
+              </div>
+              <div class="skill-logo">
+                <img src="images/others/icons8-postgres.svg" class="logo-holder" alt="" />
+                <p class="logo-title">Postgres</p>
+              </div>
+              <div class="skill-logo">
+                <img src="images/others/icons8-firebase.svg" class="logo-holder" alt="" />
+                <p class="logo-title">Firebase</p>
+              </div>
+              <div class="skill-logo">
+                <img src="images/others/icons8-redis.svg" class="logo-holder" alt="" />
+                <p class="logo-title">Redis</p>
+              </div>
+              <div class="skill-logo">
+                <img src="images/others/rabbitmq-icon.svg" class="logo-holder" alt="" />
+                <p class="logo-title">RabbitMQ</p>
+              </div>
+              <div class="skill-logo">
+                <img src="images/others/kafka.svg" class="logo-holder" alt="" />
+                <p class="logo-title">Kafka</p>
+              </div>
+              <div class="skill-logo">
+                <img src="images/others/icons8-docker.svg" class="logo-holder" alt="" />
+                <p class="logo-title">Docker</p>
+              </div>
+              <div class="skill-logo">
+                <img src="images/others/icons8-kubernetes.svg" class="logo-holder" alt="" />
+                <p class="logo-title">Kubernetes</p>
+              </div>
+              <div class="skill-logo">
+                <img src="images/others/grafana-svgrepo-com.svg" class="logo-holder" alt="" />
+                <p class="logo-title">Grafana Loki</p>
+              </div>
+              <div class="skill-logo">
+                <img src="images/others/icons8-azure.svg" class="logo-holder" alt="" />
+                <p class="logo-title">Azure</p>
+              </div>
+              <div class="skill-logo">
+                <img src="images/others/icons8-git.svg" class="logo-holder" alt="" />
+                <p class="logo-title">Git</p>
+              </div>
+              <div class="skill-logo">
+                <img src="images/others/icons8-gitlab.svg" class="logo-holder" alt="" />
+                <p class="logo-title">Gitlab</p>
+              </div>
+            </div>        
+        </div>
+      </div>
+    </div>
+    <div class="projects" id="projects">
+      <div class="projects-container">
+        <div class="project-header"><span>Projects I worked on</span></div>
+        <div class="image-container payout-project">
+          <img src="images/projects/hatio.png" class="projects-image" alt="" />
+        </div>
+        <div class="image-container coinome-project">
+          <img
+            src="images/projects/coinome.png"
+            class="projects-image"
+            alt=""
+          />
+        </div>
+      </div>
+    </div>
+    <div class="contact" id="contact">
+      <div class="contact-wrapper">
+        <div class="project-header"><span>Get in touch</span></div>
+        <h2 class="contact-h2">
+          Wanna say hi? A pizza party? Feel free to contact me
+        </h2>
+        <div class="contact-list">
+          <a href="https://www.linkedin.com/in/nishanth-s-78586614b/" target="_blank" class="contact-item">
+            <img src="images/contact-me/icons8-linkedin.svg" alt="" />
+          </a>
+          <a href="https://www.instagram.com/_nishanth_s_/" target="_blank" class="contact-item">
+            <img src="images/contact-me/icons8-instagram.svg" alt="" />
+          </a>
+          <a href="https://www.facebook.com/TheNishanth/" target="_blank" class="contact-item">
+            <img src="images/contact-me/icons8-facebook.svg" alt="" />
+          </a>
+          <a href="https://twitter.com/_tombstone_x" target="_blank" class="contact-item">
+            <img src="images/contact-me/icons8-twitterx.svg" alt="" />
+          </a>
+          <a href="mailto:nishanth.zyx@gmail.com" target="_blank" class="contact-item">
+            <img src="images/contact-me/icons8-email-48.png" alt="" />
+          </a>
+        </div>
+        <p class="wizards-callout">psst...my fellow wizards out there, I do accept owl posts ;)</p>
+      </div>
+      <div class="footer">
+        <p>© Copyright 2024 Nishanth ~</p>
+        <p> ~ Made with code in laptop</p>
+      </div>
+    <div class="custom-cursor" id="custom-cursor"></div>
+  </body>
+</html>
